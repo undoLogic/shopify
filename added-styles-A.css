@@ -1,4 +1,3 @@
-
 @media screen and (min-width: 990px) {
     .header__search summary {
         border: 2px solid;
@@ -17,4 +16,21 @@
     .header__icon span {
         justify-content: flex-start;
     }
+}
+
+
+
+.badge.price__badge-sale.color-scheme-4, badge.badge--bottom-left.color-scheme-4 {
+    background-color: rgb(255, 0, 0);
+}
+
+.price__sale .price-item--regular {
+    color: #848484 !important;
+}
+.price__sale .price-item--sale {
+    color: red!important;
+}
+
+.product-form__submit.button {
+    border: 1px solid orange;
 }
