@@ -20,7 +20,10 @@
 
 
 
-.badge.price__badge-sale.color-scheme-4, badge.badge--bottom-left.color-scheme-4 {
+
+
+/* Sale Prices */
+.badge.price__badge-sale.color-scheme-4, .badge.badge--bottom-left.color-scheme-4 {
     background-color: rgb(255, 0, 0);
 }
 
@@ -34,3 +37,58 @@
 .product-form__submit.button {
     border: 1px solid orange;
 }
+
+
+
+
+
+
+/* Shadow roll-over */
+.card.card--card.card--media:hover {
+    box-shadow: 0 4px 22px -4px rgba(0, 0, 0, 0.17);
+}
+
+
+
+/* header stick shadow */
+.header-wrapper.header-wrapper--border-bottom {
+    box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.17);
+
+}
+
+
+
+
+
+.product-form__submit.button:hover, .quick-add__submit:hover {
+    background-color: #ff8700;
+    color: white;
+    border: 1px solid #ff8700!important;
+}
+
+
+
+
+
+
+
+/* Stick side menu */
+.facets-container {
+    position: sticky;
+    top: 100px;
+}
+
+
+
+
+
+.collectionLink {
+    text-decoration: none;
+    color: #5c5c5c;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* ISSUES */
+/* Mobile Options / facets panel is below the products fix */
