@@ -90,5 +90,25 @@
 }
 
 
+
+
+
+.custom-section__image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+}
+@media only screen and (max-width: 767px) {
+    .custom-section__image {
+        height: 44px; /* Mobile-specific height */
+    }
+}
+
+
+
+
 /* ISSUES */
 /* Mobile Options / facets panel is below the products fix */
+
+
