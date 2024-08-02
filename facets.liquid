@@ -1,13 +1,21 @@
+{%- if results.results_count -%}
 
-<h2>
+{%- else -%}
+
+  <h2>
     Collections
-</h2>
+  </h2>
 
 {% assign sorted_collections = collections | sort: 'title' %}
 
 {% for collection in sorted_collections %}
-    {% if collection.handle != 'all' and collection.handle != 'featured' and collection.handle != 'Featured' %}
-        <a href="{{ collection.url }}" class="header__menu-item list-menu__item link link--text focus-inset">{{ collection.title }}</a>
 
+  {% if collection.handle != 'all' and collection.handle != 'featured' and collection.handle != 'Featured' %}
+        <a href="{{ collection.url }}" class="collectionLink">{{ collection.title }}</a>
     {% endif %}
+
 {% endfor %}
+
+<hr/>
+
+{%- endif -%}
